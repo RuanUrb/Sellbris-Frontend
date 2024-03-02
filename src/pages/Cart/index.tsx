@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./style";
 import UserContext from "@/context/UserContext";
 import cart from "@/assets/cart-white.svg";
-import QuantityProductButton from "@/components/Button/QuantityProductButton";
+import QuantityProductButton from "@/components/Button/QuantityProductButton/index.tsx";
 import {
   calculateItemByQuantity,
   calculateItemsQuantity,
@@ -10,7 +10,7 @@ import {
 } from "@/utils/cartCalculations";
 import PrimaryButton from "@/components/Button/PrimaryButton/";
 
-const Wishlist = () => {
+const Cart = () => {
   const { cartProducts } = React.useContext(UserContext);
   const totalCartValue = calculateTotalPrice(cartProducts);
   const totalCartItems = calculateItemsQuantity(cartProducts);
@@ -86,4 +86,4 @@ const Wishlist = () => {
   );
 };
 
-export default Wishlist;
+export default Cart;
