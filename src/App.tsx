@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Routes, Route } from 'react-router-dom'
-import Header from './layouts/header'
 import '/App.css'
 
 const Container = styled.div`
