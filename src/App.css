@@ -1,0 +1,52 @@
+.product-form{
+  margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+.product-form {
+  width: 50%;
+}
+}
+
+.product-title{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Label styling */
+.product-label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* Input styling */
+.product-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+
+.product-button {
+  background-color: #3498db;
+  padding: 10px;
+  margin: auto;
+  border: black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
