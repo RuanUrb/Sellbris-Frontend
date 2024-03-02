@@ -1,17 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import { UserStorage } from './context/UserContext.tsx'
-import { AuthProvider } from './context/AuthContext.tsx'
-import { GlobalStyle } from './styles/globalStyles.ts'
-import { Theme } from './styles/Theme.tsx'
-import { BrowserRouter } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
+import { BrowserRouter } from "react-router-dom";
+import { UserStorage } from "./context/UserContext.tsx";
+import { Theme } from "./styles/Theme.tsx";
+import { GlobalStyle } from "./styles/globalStyles.ts";
+import './App.css'
+import { AuthProvider } from "./context/AuthContext.tsx";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <UserStorage>
     <AuthProvider>
-      <Theme>
+    <Theme>
         <BrowserRouter>
           <App />
           <GlobalStyle />
@@ -19,5 +20,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       </Theme>
     </AuthProvider>
     </UserStorage>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

@@ -1,5 +1,5 @@
-.env
-/src/api/api.ts
+# Logs
+src/api/api.ts
 logs
 *.log
 npm-debug.log*

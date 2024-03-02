@@ -1,8 +1,9 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "@/pages/Home/Home.tsx";
+import Home from "@/pages/Home/Home";
 import './App.css'
-import Header from "@/layout/Header/index.tsx";
-import Footer from "@/layout/Footer/index.tsx";
+import Header from "@/layout/Header";
+import Footer from "@/layout/Footer/index";
 import styled from 'styled-components';
 import ProductInfo from "@/components/ProductInfo";
 import Register from "./pages/Register";
